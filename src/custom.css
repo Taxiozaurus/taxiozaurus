@@ -1,0 +1,29 @@
+ul {
+    padding-left: 2em;
+}
+.no-pad {
+    padding: 0;
+}
+.panel {
+    overflow-x: hidden;
+} 
+.profile-picture {
+    width: 100%;
+    display: none;
+}
+.profile-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url('../res/profile.jpg');
+    min-height: 70vw;
+}
+@media screen and (min-width:660px) {
+    .profile-image {
+        display: none;
+    }
+    .profile-bg {
+        background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url('../res/profile.jpg');
+        background-position-x: 10%;
+        min-height: 0px;
+    }
+}
